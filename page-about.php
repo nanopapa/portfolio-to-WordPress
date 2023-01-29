@@ -119,8 +119,8 @@ Skills
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/About__img/Skills__WordPress .png" alt="スキル、WordPress">
                 <div class="Skills__text">
-                    <h3>HTML</h3>
-                    <p>サイト全体を考慮しバランスの良いマークアップを心掛け、保守性、汎用性に優れたマークアップを心掛けています。</p>
+                    <h3>WordPress</h3>
+                    <p>既存テーマカスタマイズから自作テーマの作成など様々な環境構築に対応致します。お問い合わせフォームなどのプラグイン、カスタム投稿などお客様の要望に柔軟に対応いたします。</p>
                 </div>
             </li>
             <li>
