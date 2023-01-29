@@ -1,0 +1,146 @@
+@use '../common__scss/body';
+@use '../common__scss/header';
+@use '../common__scss/footer';
+
+
+/*
+================================================================
+ContactPage
+================================================================
+*/
+
+
+input,textarea{
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.Contact__form{
+    margin-bottom: 120px;
+
+
+        ul li {
+            margin-bottom: 60px;
+        }label{
+            display:block;
+            font-weight: bold;
+            margin-bottom: 10px;
+                span{
+                    color: #fff;
+                    background-color: #66C2F4;
+                    font-weight: normal;
+                    margin-left: 10px;
+                    padding:5px; 
+                }
+        }
+        ul li input{
+            width:100%;
+            height: 50px;
+            background-color: #FAFAFA;
+            font-size: 2rem;
+        }
+
+        ul li textarea{
+            width: 100%;
+            background-color: #FAFAFA;
+            height: 270px;
+            font-size: 2rem;
+        }
+
+        .submit__btn{
+            text-align: center;
+
+        }
+        
+        
+        .submit__btn input{
+            color: #fff;
+            width: 200px;
+            border-radius: 40px;
+            padding:20px;
+            text-align: center;
+            background-color:#66C2F4;
+            cursor: pointer;
+            
+                &:hover{
+                    opacity: .8;
+                }
+        }
+
+        // 確認画面フォーム用
+    .submit__btn button{
+        color: #fff;
+        width: 200px;
+        border-radius: 40px;
+        padding:20px;
+        text-align: center;
+        background-color:#66C2F4;
+        cursor: pointer;
+        border: none;
+        
+            &:hover{
+                opacity: .8;
+            }
+        }
+
+    
+    }
+.caution{
+        display: none;
+        margin-bottom: 20px;
+}
+
+.mw_wp_form_confirm .caution {
+        display: block;
+    }
+
+
+
+
+    @media screen and(max-width:960px) {
+        .header__menu{
+            display: none;
+            }
+        
+    
+        .sp__menu{
+            display: block;
+        }
+    }    
+
+      @media screen and(max-width:447px) {
+        .submit__btn button{
+            margin-top: 20px;
+        }
+    }    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

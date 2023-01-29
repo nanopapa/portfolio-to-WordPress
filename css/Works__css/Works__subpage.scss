@@ -1,0 +1,112 @@
+@use '../common__scss/body';
+@use '../common__scss/header';
+@use '../common__scss/Contact';
+@use '../common__scss/footer';
+
+/*
+================================================================
+Works
+================================================================
+*/
+
+.container{
+  position: relative;
+  
+    
+}
+
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.swiper-slide {
+  text-align: center;
+
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -50px;
+  z-index:1;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 15px;
+  z-index: 1;
+}
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 25px; 
+  font-weight: bold;
+}
+
+
+.swiper-button-prev {
+  left: -5%;
+  z-index: 1;
+}
+
+.swiper-button-next {
+  right: -5%;
+  z-index: 1;
+}
+
+
+.Works__details{
+  width: 80%;
+  margin:50px auto 0 auto;
+  & a:hover{
+    opacity: .3;
+  }
+
+    dt{
+      font-weight: bold;
+      margin-bottom: 10px;
+      
+    }
+
+    dd{
+      border-bottom: 1px dotted #333;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      overflow-wrap: break-word;
+        &:last-child{
+          margin-bottom: 0;
+        }
+    }
+  }
+  @media(max-width:500px){
+    .Works__details{
+      font-size: 1.2rem;
+    }
+  }
+
+
+  @media(max-width:850px){
+
+.swiper-button-prev {
+  left: 5%;
+}
+.swiper-button-next {
+  right: 5%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px; 
+}
+
+
+  }
+

@@ -1,0 +1,207 @@
+@use '../common__scss/body';
+@use '../common__scss/header';
+@use '../common__scss/Contact';
+@use '../common__scss/footer';
+
+
+/*
+================================================================
+Service
+================================================================
+*/
+
+
+
+
+
+.Service{
+    margin-top: 144px;
+    position: relative;
+}
+
+
+.Service ul li:nth-child(even){
+    flex-direction: row-reverse;
+}
+.Service ul li:nth-child(even) .Service__text{
+    margin-right: 32px;
+}
+
+
+
+.Service ul li{
+    display: flex;
+    margin-bottom: 60px;
+    position: relative;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+}
+
+.Service ul li .Service__text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.Service ul li:nth-child(odd) img{
+    margin-right: 32px;
+}
+
+
+
+.Service ul li .Service__text dl{
+    margin-top: auto;
+}
+
+.Service ul li .Service__text dl .fee__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*
+================================================================
+Flow
+================================================================
+*/
+
+.Flow ul li {
+    display: flex;
+    margin-bottom: 80px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+}
+
+
+.Flow ul li .Flow__circles {
+width: 20%;
+margin-right: 16px;
+}
+
+.Flow ul li .Flow__circles p{
+    background-color: #66C2F4;
+    text-align: center;
+    color:#fff;
+    border-radius: 20px;
+    padding:5px;
+}
+
+
+.Flow ul li .Flow__circles span{
+    width: 20px;
+    height: 20px;
+    background-color: #66C2F4;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    margin-top: 30px;
+
+}
+
+.Flow__circles span{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .8s, transform .8s;
+}
+
+
+
+.Flow__circles span.appear{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Flow ul li .Flow__img{
+    margin-right: 24px;
+}
+
+.Flow ul li .Flow__text {
+    width: 80%;
+}
+
+.Flow ul li .Flow__text h3{
+    margin-bottom: 30px;
+}
+
+/*
+================================================================
+body
+================================================================
+*/
+
+@media  (max-width:800px){
+
+.Service ul li{
+    flex-direction: column;
+}
+            
+.Service ul li img{
+    width: 100%;
+}
+        
+.Service ul li:nth-child(even){
+    flex-direction: column;
+}
+.Service ul li .Service__text{
+    margin-right: 0;
+}
+
+.Service ul li h3{
+    text-align: center;
+    margin: 30px 0;
+}
+    
+.Service__text dl{
+    padding-top: 30px;
+}
+
+.Service ul li:nth-child(even) .Service__text {
+    margin-right: 0;
+}
+    
+    
+.Flow ul li{
+    flex-direction: column;
+}
+    
+.Flow ul li .Flow__img {
+    margin-right: 0;
+}
+
+.Flow ul li img{
+    width: 100%;
+}
+
+.Flow ul li h3{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.Flow ul li .Flow__text {
+    width: 100%;
+}
+
+
+.Flow ul li .Flow__circles{
+    margin:0 auto 30px auto;
+}
+
+.Flow ul li .Flow__circles span{
+    display: none;
+}
+
+.Flow ul li .Flow__circles {
+    width: 150px;
+}
+
+
+}
+

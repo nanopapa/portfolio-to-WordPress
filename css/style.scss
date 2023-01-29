@@ -1,0 +1,208 @@
+
+
+@charset "UTF-8";
+
+@use '../common__scss/body';
+@use '../common__scss/header';
+@use '../common__scss/Contact';
+@use '../common__scss/footer';
+
+
+
+/*
+================================================================
+first__view
+================================================================
+*/
+
+.first__view img{
+    height: 100vh;
+    position: relative;
+    object-fit: cover;
+}
+
+.first__view p{
+    position: absolute;
+    top:20%;
+    color:#fff;
+    font-size: 4rem;
+    font-family: 'Unna', serif;
+    line-height: 1.8;
+}
+
+/*
+================================================================
+Service
+================================================================
+*/
+
+
+
+.Service__list{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Service__list li{
+    width: 32%;
+}
+
+
+.Service__list h3{
+    text-align: center;
+    margin:30px 0 16px 0;
+}
+
+.Service__list p{
+    padding:0 16px;
+    text-align:left;
+
+}
+
+
+
+
+/*
+================================================================
+AboutMe
+================================================================
+*/
+
+.AboutMe{
+    background-color:#F0FAFF;
+    padding:40px 0;
+}
+
+.AboutMe__introduction{
+    display: flex;
+}
+
+.AboutMe__img--left{
+    width: 35%;
+    margin-right: 20px;
+}
+
+.AboutMe__text--right{
+    width: 65%;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+
+/*
+================================================================
+Works
+================================================================
+*/
+
+.Works ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 120px;
+}
+
+
+
+.Works ul  li a{
+    cursor: pointer;
+    height: 120px;
+    width: 100%;
+    display: inline-block;
+    &:hover{
+        opacity: .8;
+    }
+}
+
+
+
+
+li p{
+    text-align: center;
+}
+
+
+.Works ul li img{
+    margin-bottom: 30px;
+    border: 1px solid #eff4f6;
+}
+
+/*
+================================================================
+sp 
+================================================================
+*/
+
+@media screen  and(max-width:850px){
+
+.first__view p{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 3.2rem;
+    text-align: center;
+}
+}
+
+
+@media screen and(max-width:500px) {
+
+.first__view p{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.Service__list{
+    flex-direction: column;
+}
+
+.Service__list  li{
+    width: 100%;
+    margin-bottom: 60px;
+
+        p{
+            padding:0;
+        }
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+
+.AboutMe__introduction{
+    flex-direction: column;
+}
+
+.AboutMe__img--left{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.AboutMe__text--right{
+    width: 100%;
+}
+
+
+.Works ul{
+    grid-template-columns: 100%;
+    text-align: center;
+    row-gap:60px;
+}
+
+.Works ul li img{
+    height:auto;
+    width: 100%;
+} 
+
+
+
+
+}
